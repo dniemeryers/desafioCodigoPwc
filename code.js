@@ -61,5 +61,19 @@ function encontrarPalindromoMaisLongo() {
     document.getElementById('saida_palindroma').textContent = '';
   }
 
+  
+  function converterPrimeiraLetraMaiuscula() {
+    var input = document.getElementById("frase").value;
+    var output = input.replace(/(?:^|[.!?]\s+)(\w)/g, function(match) {
+      return match.toUpperCase();
+    });
+    document.getElementById("frase_maiuscula").textContent = output;
+  }
+
+  function limparInputMaiuscula() {
+    document.getElementById('frase').value = '';
+    document.getElementById('frase_maiuscula').textContent = '';
+  }
+
 
   
