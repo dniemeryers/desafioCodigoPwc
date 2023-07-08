@@ -32,6 +32,34 @@ function removeDuplicates() {
     input.value = "";
 }
 
+function encontrarPalindromoMaisLongo() {
+    const input = document.getElementById('palindromo').value;
+    
+    // Função auxiliar para verificar se uma string é palíndroma
+    function isPalindromo(str) {
+      const reversed = str.split('').reverse().join('');
+      return str === reversed;
+    }
+  
+    let palindromoMaisLongo = '';
+  
+    // Encontrar a substring palíndroma mais longa
+    for (let i = 0; i < input.length; i++) {
+      for (let j = i + 1; j <= input.length; j++) {
+        const substring = input.substring(i, j);
+        if (isPalindromo(substring) && substring.length > palindromoMaisLongo.length) {
+          palindromoMaisLongo = substring;
+        }
+      }
+    }
+  
+    document.getElementById('saida_palindroma').textContent = palindromoMaisLongo;
+  }
+  
+  function limparInputPalindromo() {
+    document.getElementById('palindromo').value = '';
+    document.getElementById('saida_palindroma').textContent = '';
+  }
 
 
   
