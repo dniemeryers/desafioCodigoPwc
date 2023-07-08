@@ -75,5 +75,21 @@ function encontrarPalindromoMaisLongo() {
     document.getElementById('frase_maiuscula').textContent = '';
   }
 
+  function verificarPalindromo() {
+    var palavra = document.getElementById("ana_palindromo").value;
+    var resultado = document.getElementById("result_palindromo");
+
+    if (palavra.toLowerCase() === palavra.toLowerCase().split('').reverse().join('')) {
+        resultado.textContent = "true";
+    } else {
+        resultado.textContent = "false";
+    }
+}
+
+function limparInputVerifica() {
+    document.getElementById('ana_palindromo').value = '';
+    document.getElementById('result_palindromo').textContent = '';
+  }
+
 
   
