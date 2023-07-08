@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    width:800px;
+    margin:auto;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+margin-top: 40px;
+}
+
+p{
+   
+    font-size: 20px;
+}
+
+.input{
+    display:flex;
+    flex-direction: row;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 20px;
+    
+}
+span{
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.output{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+.input_text{
+    height: 20px;  
+    font-size: 20px;
+    
+}
+.button{
+    
+    height: 40px;
+    width: 120px;
+    color:aliceblue;
+    background-color: gray;
+    border: none;
+
+}
+.button:hover{
+    cursor: pointer;
+    
+}
