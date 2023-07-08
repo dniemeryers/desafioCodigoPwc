@@ -17,6 +17,20 @@ function limparInputRevert(){
     input.value = "";
 }
 
+function removeDuplicates() {
+    var input = document.getElementById("remove").value;
+    var remove = [...new Set(input)];
+    var result = remove.join("");
+    document.getElementById("remove_duplicates").textContent = result;
+  }
+
+  function limparInputRemove(){
+
+    var input = document.getElementById("remove");
+    var resultadoSpan = document.getElementById("remove_duplicates");
+    resultadoSpan.innerHTML = "";
+    input.value = "";
+}
 
 
 
